@@ -4,9 +4,97 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Steady</title>
-<meta http-equiv="refresh" content="0; url=privacy.html">
+<meta name="description" content="Steady is an iPhone app for logging the weight you lift and seeing it go up. Your workouts stay on your phone.">
+<style>
+  :root {
+    --background: #FAF6F0;
+    --surface: #FFFDFA;
+    --text: #4A1524;
+    --text-secondary: #7A4A55;
+    --accent: #7B1E34;
+    --hero-end: #4A1022;
+    --on-hero: #FFFFFF;
+    --separator: #EADDD8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --background: #121214;
+      --surface: #1C1C1F;
+      --text: #F3F0EB;
+      --text-secondary: #A19C98;
+      --accent: #F3F0EB;
+      --separator: #2C2B2F;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  header {
+    background: linear-gradient(180deg, #7B1E34, var(--hero-end));
+    color: var(--on-hero);
+    padding: 72px 16px 56px;
+  }
+  .wrap { max-width: 680px; margin: 0 auto; }
+  .brand { display: flex; align-items: flex-end; gap: 6px; height: 44px; margin-bottom: 24px; }
+  .brand span { width: 11px; border-radius: 4px; background: var(--on-hero); }
+  h1 { font: 400 48px/1.1 Georgia, serif; margin: 0 0 12px; }
+  .tagline { font: 400 26px/1.3 Georgia, serif; margin: 0 0 6px; }
+  .tagline em { font-style: italic; }
+  header p { margin: 0; opacity: .85; }
+  main { padding: 32px 16px 64px; }
+  .card {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 20px 24px;
+    box-shadow: 0 8px 24px rgba(74, 21, 36, .08);
+    margin-bottom: 20px;
+  }
+  h2 { font: 400 24px/1.25 Georgia, serif; margin: 0 0 8px; }
+  ul { padding-left: 20px; margin: 0; }
+  li { margin-bottom: 6px; }
+  .card p { margin: 0; }
+  .muted { color: var(--text-secondary); }
+  a { color: var(--accent); text-underline-offset: 3px; }
+  footer { border-top: 1px solid var(--separator); padding-top: 20px; margin-top: 40px; font-size: 15px; }
+</style>
 </head>
-<body style="background:#FAF6F0;color:#4A1524;font-family:-apple-system,sans-serif;padding:16px">
-<p><a href="privacy.html" style="color:#7B1E34">Steady Privacy Policy</a></p>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand" aria-hidden="true"><span style="height:18px"></span><span style="height:30px"></span><span style="height:44px"></span></div>
+    <h1>Steady</h1>
+    <p class="tagline">Track every <em>lift.</em></p>
+    <p>An iPhone app for logging the weight you lift and seeing it go up. Your workouts stay on your phone.</p>
+  </div>
+</header>
+<main>
+  <div class="wrap">
+    <section class="card">
+      <h2>What it does</h2>
+      <ul>
+        <li>Log each exercise's sets, weights and reps in a few taps.</li>
+        <li>See whether each lift is going up, with a trend for every exercise.</li>
+        <li>Premium adds a suggested next weight for each lift, with the reason why.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Private by design</h2>
+      <p>Your workouts are stored only on your iPhone and never uploaded. An account is optional. Read the <a href="privacy.html">privacy policy</a>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Support</h2>
+      <p>Steady is in testing on TestFlight. For help, feedback or questions, email <a href="mailto:steedy.help@gmail.com">steedy.help@gmail.com</a>.</p>
+    </section>
+
+    <footer class="muted">Steady, by Abdallah Almansy · <a href="privacy.html">Privacy Policy</a> · <a href="mailto:steedy.help@gmail.com">steedy.help@gmail.com</a></footer>
+  </div>
+</main>
 </body>
 </html>
